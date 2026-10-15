@@ -36,7 +36,7 @@ jobs:
               jupyter nbconvert \
                   --to webpdf \
                   --HTMLExporter.embed_images=True \
-                  --WebPDFExporter.pdf_options='{"scale":0.5}' \
+                  --template classic \
                   --allow-chromium-download \
                   --output-dir pdfs \
                   "$nb"
