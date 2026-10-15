@@ -36,7 +36,7 @@ jobs:
 
           for nb in *.ipynb; do
             jupyter nbconvert \
-              --to pdf \
+              --to webpdf \
               --output-dir pdfs \
               "$nb"
           done
