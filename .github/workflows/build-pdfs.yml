@@ -1,6 +1,7 @@
 name: Build notebook PDFs
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "*.ipynb"
