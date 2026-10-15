@@ -34,7 +34,8 @@ jobs:
 
           find . -name "*.ipynb" | while read nb; do
               jupyter nbconvert \
-                  --to pdfviahtml \
+                  --to webpdf \
+                  --HTMLExporter.embed_images=True \
                   --allow-chromium-download \
                   --output-dir pdfs \
                   "$nb"
